@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+:root{
+    --fonte-principal: 'Alice';
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte-principal);
+}
+
+.container {
+    width: 1000px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.clearfix {
+    overflow: hidden;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#nav {
+    background: rgb(255, 182, 237);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#nav ul li {
+    list-style: none;
+    display: inline;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+#nav ul#menu li {
+    float: left;
+    border-radius: 8px;
+}
+
+#nav ul.right li {
+    float: right;
+}
+
+.azul {
+    background-color: rgb(191, 239, 253);
+}
+
+.banner {
+    position: relative;
+}
+
+.banner::before{
+    content: "";
+    background-image: url('assets/css/IMG/JSDFHGJSDFH.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    opacity: 0.50;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+img.img_ajuste {
+    object-fit: cover;
+    border-radius: 70px 70px 70px 70px ;
+}
+
+img.img_ajuste1 {
+    object-fit:  cover;
+    border-radius: 20px 20px 0 0;
+}
+
+img {
+    width: 100%;
+}
+
+#Cardápio img {
+    height: 400px;
+    padding-top: 5px;
+}
+
+#Cardápio h6 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 177, 236);
+    border-radius: 0 0 8px 8px;
+    font-weight: normal;
+    padding: 5px;
+}
+
+#inicio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+#Cardápio{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+[class*="col-"] {
+    float: left;
+    padding-right: 10px;
+}
+
+.col-1 {width: 8.33%; float: left;}
+.col-2 {width: 16.66%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}
+
+.verde{
+    background-color: rgb(217, 194, 255);
+}
+
+.localização{
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.btn{
+    font-family: var(--fonte-principal);
+    padding: 15px;
+    border-radius: 45px;
+    background-color: rgb(183, 167, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+.btn:hover { background-color: rgb(151, 134, 250); }
+section { padding-bottom: 20px; }
+blockquote, p, hr { margin-bottom: 10px; }
+
+#fim{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.telefone{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+#dois{
+    padding-top: 20px;
+}
+
+#dois img{
+    padding-top: 10px;
+}
+#nav ul#menu li {
+    border-radius: 12px;
+    background-color: rgb(247, 136, 247);
+}
+
+
+#nav ul li a {
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+}
