@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*https://coolors.co/palette/e4eff7-030a23-afcac0-9baac0-0a4ccf-1f315e-6695c2*/
 
 :root{
-    --fonte-principal: 'Alice';
+    --fonte-principal: 'Roboto';
 }
 
 * {
@@ -12,6 +14,7 @@
 
 body {
     font-family: var(--fonte-principal);
+    padding-top: 60px;
 }
 
 .container {
@@ -31,13 +34,13 @@ body {
     clear: both;
 }
 
-#nav {
-    background: rgb(255, 182, 237);
-    padding-top: 10px;
-    padding-bottom: 10px;
+nav {
+    background: rgb(3, 10, 35);
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-#nav ul li {
+nav ul li {
     list-style: none;
     display: inline;
     padding-top: 3px;
@@ -46,21 +49,32 @@ body {
     margin-right: 3px;
 }
 
-#nav ul#menu li {
+nav ul#menu li {
     float: left;
     border-radius: 8px;
 }
 
-#nav ul.right li {
+nav ul.right li {
     float: right;
+    margin-top: 5px;
 }
 
 .azul {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(10, 76, 207);
+    width: 100%;
+    float: left;
+    display: block;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.azul h1 {
+    text-align: center;
 }
 
 .banner {
     position: relative;
+    padding: 0;
 }
 
 .banner::before{
@@ -91,21 +105,15 @@ img {
     width: 100%;
 }
 
-#Patrocinadores img {
+section#patrocinadores img {
     height: 200px;
     padding-top: 5px;
 }
 
-#Patrocinadores{
+section#patrocinadores{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
-#inicio {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
 
 [class*="col-"] {
     float: left;
@@ -125,8 +133,39 @@ img {
 .col-11 {width: 91.66%}
 .col-12 {width: 100%}
 
+.sobre {
+    padding-top: 20px;
+    width: 100%;
+    float: left;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sobre img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.sobre h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sobre p {
+    font-size: 20px;
+}
+
 .verde{
     background-color: rgb(255, 255, 255);
+}
+
+.escuro{
+    background-color: rgb(3, 10, 35);
+    padding-top: 20px;
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .localização{
@@ -145,6 +184,32 @@ img {
     position: absolute;
     margin-top: 50px;
     margin-right: 10px;
+}
+
+#cronograma {
+    width: 100%;
+    float: left;
+    display: block;
+    padding: 0;
+}
+
+#cronograma h1{
+    text-align: center;
+    color: rgb(228, 239, 247);
+    margin-bottom: 20px;
+}
+
+#segunda {
+    width: 100%;
+    display: block;
+    float: left;
+    background-color: rgb(175, 202, 192);
+    padding: 20px;
+}
+
+#segunda h1 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
 }
 
 .btn:hover { background-color: rgb(151, 134, 250); }
@@ -168,14 +233,161 @@ blockquote, p, hr { margin-bottom: 10px; }
 #dois img{
     padding-top: 10px;
 }
-#nav ul#menu li {
-    border-radius: 12px;
-    background-color: rgb(247, 136, 247);
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+nav ul#menu li {
+    border-radius: 17px;
+    background-color: rgb(175, 202, 192);
+}
+
+nav ul#menu li a {
+    font-size: 24px;
 }
 
 
-#nav ul li a {
+nav ul li a {
     padding: 15px;
-    color: black;
+    color: rgb(228, 239, 247);
     text-decoration: none;
+}
+
+#cronograma h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+#segunda p {
+    margin-bottom: 0px;
+    margin-left: 8px;
+}
+
+.manha {
+    margin-bottom: 20px;
+}
+
+.tarde {
+    margin-bottom: 20px;
+}
+
+#terca img {
+    margin-left: 8px;
+    width: 946px;
+    margin-bottom: 8px;
+}
+
+#terca {
+    width: 100%;
+    display: block;
+    float: left;
+    background-color: rgb(155, 170, 192);
+    padding: 20px;
+}
+
+.manhã img {
+    margin-left: 8px;
+    width: 946px;
+}
+
+#terca p {
+    margin-left: 8px;
+    margin-bottom: 0;
+}
+
+#quarta {
+    width: 100%;
+    display: block;
+    float: left;
+    background-color: rgb(102, 149, 194);
+    padding: 20px;
+}
+
+#quarta p {
+    margin-left: 8px;
+    margin-bottom: 0;
+}
+
+#quarta .manha {
+    margin-bottom: 0px;
+}
+
+.branco {
+    padding-top: 36px;
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 36px;
+}
+
+#fotos {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+footer .azul {
+    margin-bottom: 0;
+}
+
+footer img {
+    height: 100px;
+    width: auto;
+}
+
+footer h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+#fotos p {
+    text-align: center;
+}
+
+.botao {
+    font-family: var(--fonte-principal);
+    padding: 15px;
+    border-radius: 45px;
+    background-color: rgb(0,255,0);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.cadastro {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.input-container label {
+    display: block;
+}
+
+.input-container {
+    margin: 5px;
+    padding-bottom: 10px;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
 }

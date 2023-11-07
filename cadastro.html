@@ -6,46 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale-1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="assets/css/estilos.css">
-    <script>
-        function mascara(i) {
-
-        var v = i.value;
-
-        if(isNaN(v[v.length-1])){
-            i.value = v.substring(0, v.length - 1);
-            return;
-           }
-
-        i.setAttribute("maxlength", "14");
-        if (v.length == 3 || v.length == 7) i.value += ".";
-        if (v.length == 11) i.value += ".";
-
-        }
-    </script>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html"><h1>VIII-SCI</h1></a></li>
-                <li><a href="#">Parcerias</a></li>
-                <li><a href="#">Maratona</a></li>
-                <li><a href="#">Jogos Eletrônicos</a></li>
-                <li><a href="#">Cronograma</a></li>
-                <li><a href="#">Fotos</a></li>
-                <li><a href="cadastro.html">Inscreva-se</a></li>
-            </ul>
+            <div class="container clearfix">
+                <ul id="menu">
+                    <li><a href="/">VIII-SCI</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="index.html#patrocinadores">Parceiros</a></li>
+                    <li><a href="index.html#cronograma">Maratona</a></li>
+                    <li><a href="index.html#cronograma">Jogos Eletrônicos</a></li>
+                    <li><a href="index.html#cronograma">Cronograma</a></li>
+                    <li><a href="index.html#fotos">Fotos</a></li>
+                    <li><a href="cadastro.html">Inscreva-se</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
+
     <main>
-        <section class="container">
-            <form>
+        <section class="container cadastro">
+            <form onsubmit="return validarFormulario()">
                 <fieldset>
                     <legend>Inscreva-se</legend>
                     <div class="input-container">
                         <label for="Nome">Nome do aluno</label>
-                        <input type="text" name="Nome" placeholder="Nome do aluno" required autofocus>
+                        <input type="text" name="nome" placeholder="Nome do aluno" required autofocus>
                     </div>
                     <div class="input-container">
                         <label for="matrícula">Número de matricula</label>
@@ -53,7 +42,7 @@
                     </div>
                     <div class="input-container">
                         <label for="cpf">CPF</label>
-                        <input type="text" name="cpf" placeholder="000.000.000-00" oninput="mascara(this)" required>
+                        <input type="text" name="cpf" placeholder="000.000.000-00" id="cpf" oninput="mascara(this)" required>
                     </div>
                     <div class="input-container"> 
                         <label for="email">Email</label>
@@ -78,6 +67,25 @@
                 </fieldset>
             </form>
         </section>
+        <footer>
+            <div id="main" class="azul">
+                <div class="container clearfix">
+                    <div id="main" class="telefone">
+                        <div class="col-6">
+                            <h1>FALE CONOSCO!</h1>
+                            <p><b>TELEFONE: </b>4002-8922</p>
+                            <p><b>EMAIL: </b>direcao.videira@ifc.edu.br</p>
+                        </div>
+                        <div class="col-6">
+                            <h1>REALIZAÇÃO</h1>
+                            <span><img src="assets/css/IMG/logo-if.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
