@@ -35,7 +35,7 @@ body {
 }
 
 nav {
-    background: rgb(3, 10, 35);
+    background: rgb(111, 111, 250);
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -60,7 +60,7 @@ nav ul.right li {
 }
 
 .azul {
-    background-color: rgb(10, 76, 207);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     float: left;
     display: block;
@@ -75,6 +75,7 @@ nav ul.right li {
 .banner {
     position: relative;
     padding: 0;
+    
 }
 
 .banner::before{
@@ -139,6 +140,7 @@ section#patrocinadores{
     float: left;
     display: block;
     margin-bottom: 20px;
+    background-color: rgb(151, 151, 251);
 }
 
 .sobre img {
@@ -156,11 +158,12 @@ section#patrocinadores{
 }
 
 .verde{
-    background-color: rgb(255, 255, 255);
+    background-color:  rgb(151, 151, 251);
 }
 
+
 .escuro{
-    background-color: rgb(3, 10, 35);
+    background-color: rgb(151, 151, 251);
     padding-top: 20px;
     display: block;
     float: left;
@@ -177,8 +180,8 @@ section#patrocinadores{
     font-family: var(--fonte-principal);
     padding: 15px;
     border-radius: 45px;
-    background-color: rgb(183, 167, 255);
-    color: rgb(0, 0, 0);
+    background-color: rgb(130, 103, 251);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     cursor: pointer;
     position: absolute;
@@ -195,7 +198,7 @@ section#patrocinadores{
 
 #cronograma h1{
     text-align: center;
-    color: rgb(228, 239, 247);
+    color: rgb(0, 0, 0);
     margin-bottom: 20px;
 }
 
@@ -203,7 +206,7 @@ section#patrocinadores{
     width: 100%;
     display: block;
     float: left;
-    background-color: rgb(175, 202, 192);
+    background-color: rgb(172, 175, 251);
     padding: 20px;
 }
 
@@ -244,7 +247,7 @@ nav {
 
 nav ul#menu li {
     border-radius: 17px;
-    background-color: rgb(175, 202, 192);
+    background-color: rgb(90, 90, 253);
 }
 
 nav ul#menu li a {
@@ -254,7 +257,7 @@ nav ul#menu li a {
 
 nav ul li a {
     padding: 15px;
-    color: rgb(228, 239, 247);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -286,8 +289,7 @@ nav ul li a {
     width: 100%;
     display: block;
     float: left;
-    background-color: rgb(155, 170, 192);
-    padding: 20px;
+    background-color: rgb(172, 175, 251);
 }
 
 .manhã img {
@@ -304,7 +306,7 @@ nav ul li a {
     width: 100%;
     display: block;
     float: left;
-    background-color: rgb(102, 149, 194);
+    background-color: rgb(172, 175, 251);
     padding: 20px;
 }
 
@@ -322,7 +324,7 @@ nav ul li a {
     display: block;
     float: left;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(148, 151, 247);
     padding-bottom: 36px;
 }
 
@@ -354,8 +356,8 @@ footer h1 {
     font-family: var(--fonte-principal);
     padding: 15px;
     border-radius: 45px;
-    background-color: rgb(0,255,0);
-    color: rgb(0, 0, 0);
+    background-color: rgb(129, 93, 248);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     cursor: pointer;
     text-align: center;
